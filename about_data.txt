@@ -1,0 +1,123 @@
+
+----------
+This file contains a full description of all data sets used in the paper "XXX"
+----------
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+[A] Data Sets of São Paulo City / Brazil
+
+[A1] Social Isolation Rate Data Set (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-02-26 -- 2021-12-31
+b. SOURCE : São Paulo State Government (Available in : https://www.saopaulo.sp.gov.br/coronavirus/isolamento/)
+c. FILE I : Social Isolation Rate Daily Average 
+   NAME : "sp_city_isolation_rate_2020-2021.txt"
+d. FILE II : Moving Average 7 Days to Data Set of the File I
+   NAME : "sp_city_isolation_rate_movmean7days_2020-2021.txt"
+
+ATTENTION : This data set has some gaps in the registers. Each absent register (2020 March, 06th/14th/15th, and 16th) was substituted by the simple average between the neighbors close.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+[A2] Cases by Notification Date (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-02-26 -- 2022-12-31
+b. SOURCE : e-SUS VE/DVE/COVISA/SMS-SP (Available in : http://tabnet.saude.prefeitura.sp.gov.br/cgi/deftohtm3.exe?secretarias/saude/TABNET/RCOVID19/covid19.def)
+c. FILE I : COVID-19 Cases by Notification Data
+   NAME : "sp_city_cases_2020-2022.txt"
+d. FILE II : Moving Average 7 Days to Data Set of the FILE I
+   NAME : "sp_city_cases_movmean7days_2020-2022.txt"
+
+ATTENTION : This data set has some gaps in the registers. Each absent register (2020: January, 01st/10th/16th/18th/27th/30th, and 31st; February, 01st/06th/10th/17th/19th/20th/24th, and 28th; March, 04th) was substituted by the simple average between the neighbors close (in cases of non-integer values the cases number these days was considered equal to biggest integer closer).
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+NOTE :: Temperature and Humidity Measures were obtained from official registers of the meteorological station in São Paulo City indicates below: 
+
+Meteorological Measurement Station :: Mirante de Santana
+Geographical Informations ::
+Latitude :: -23.496
+Longitute :: -46,6201
+Altitude :: 785,64 
+
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+[A3] Daily Temperature Average (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-01-31 -- 2022-12-31
+b. SOURCE : Instituto Nacional de Meteorologia (Available in : https://portal.inmet.gov.br/dadoshistoricos)
+c. FILE NAME : sp_city_temperature_2020-2022.txt
+   NAME : "sp_city_temperature_2020-2022.txt"
+
+NOTTICE : Temperature in Celsius Degrees (according International System).
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+[A4] Daily Humidity Average (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-01-31 -- 2022-12-31
+b. SOURCE : Instituto Nacional de Meteorologia (Available in : https://portal.inmet.gov.br/dadoshistoricos)
+c. FILE NAME : sp_city_humidity_2020-2022.txt
+   NAME : "sp_city_humidity_2020-2022.txt"
+
+NOTTICE : Humidity in Percent (%).
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+[B] Data Sets of New York City / United States of America
+
+[B1] Cases by Notification Date (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-02-29 -- 2022-12-31
+b. SOURCE : NYC Department of Health and Mental Hygiene (Available in : https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/data-by-day.csv)
+c. FILE I : COVID-19 Cases by Notification Data
+   NAME : "ny_city_cases_2020-2022.txt"
+d. FILE II : Moving Average 7 Days to Data Set of the FILE I
+   NAME : "ny_city_cases_movmean7days_2020-2022.txt"
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+NOTE :: Temperature and Humidity Measures were obtained from official registers of the meteorological station indicates below: 
+
+Meteorological Measurement Station  of Central Park, NY
+Geographical Informations ::
+Latitude :: 40.785° N
+Longitute :: 73.971° W
+Altitude :: 144
+
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+[B2] Daily Temperature Average (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-02-29 -- 2022-12-31
+b. SOURCE : National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce. Available in : https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data
+c. FILE NAME : ny_city_temperature_2020-2022.txt
+
+NOTTICE : (a) Temperature in Farenheit Degrees was changed to Celsius Degrees (International System).
+(b) The historical data was treated, and absente registers was substituted by the simple average of inferior and superior registers more closer.
+-----------------------------------------------------------------------
+----------------------------------------------------------------------- 
+
+[B3] Daily Relative Humidity Air Average (Acess in 2023, April)
+a. TIME INTERVAL (yyyy-mm-dd) :: 2020-01-01 -- 2022-12-31
+b. SOURCE : National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce. Available in : hhttps://www.ncei.noaa.gov/access/search/data-search/local-climatological-data
+c. FILE NAME : ny_city_humidity_2020-2022.txt
+
+NOTTICE : The historical data was treated, and absente registers was substituted by the simple average of inferior and superior registers more closer.
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+Written by Magrini, L. A. (April, 2023)
+magrini@ifsp.edu.br
+
+
+
+
+
